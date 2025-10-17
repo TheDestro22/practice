@@ -50,12 +50,6 @@ int main(int argc, char **argv)
         values.push_back(x);
     }
 
-    if (values.empty())
-    {
-        std::cerr << "No valid integers provided.\n";
-        return 1;
-    }
-
     auto result = unique_sorted(values);
     std::cout << "Result (unique sorted): ";
     print_vec(result);
